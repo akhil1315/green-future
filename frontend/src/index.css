@@ -1,0 +1,293 @@
+/* Global Styles */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color: #333;
+  --background-color: #ffffff;
+}
+
+.idea-card {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+.idea-card .vote-buttons button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.idea-card .vote-count {
+  color: var(--secondary-color);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* App Container */
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+form input,
+form textarea,
+form button {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+/* Idea List */
+/* .idea-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+} */
+
+/* Idea Card */
+/* .idea-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+} */
+
+
+/* Idea List Styles */
+.idea-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between cards */
+  margin: 20px 0;
+}
+
+/* Idea Card Styles */
+.idea-card {
+  background: #ffffff; /* White background for cards */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Internal padding */
+  border: 1px solid #ddd; /* Subtle border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation */
+}
+
+.idea-card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Title Styles */
+.idea-card h3 {
+  font-size: 1.5rem; /* Large font for titles */
+  color: #2c3e50; /* Dark blue-gray color */
+  margin-bottom: 10px;
+}
+
+/* Description Styles */
+.idea-card p {
+  font-size: 1rem; /* Regular font size */
+  color: #666; /* Medium gray for description */
+  margin-bottom: 15px;
+  line-height: 1.6; /* Better readability */
+}
+
+/* Vote Buttons */
+.idea-card .vote-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.idea-card .vote-buttons button {
+  flex: 1; /* Equal width for buttons */
+  padding: 10px 15px; /* Padding inside buttons */
+  font-size: 0.9rem; /* Button font size */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ddd; /* Subtle border */
+  background-color: #f9f9f9; /* Light background */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.idea-card .vote-buttons button:hover {
+  background-color: #3498db; /* Blue background on hover */
+  color: white; /* White text on hover */
+  border-color: #3498db; /* Blue border */
+}
+
+/* Vote Count */
+.idea-card .vote-count {
+  font-size: 1.2rem; /* Slightly larger font for emphasis */
+  font-weight: bold; /* Bold for visibility */
+  color: #2ecc71; /* Green color for votes */
+  text-align: center; /* Center-aligned */
+  margin-top: 10px; /* Space above the vote count */
+}
+
+
+.idea-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.idea-card h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.idea-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.idea-card .vote-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.idea-card .vote-buttons button {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.idea-card .vote-buttons button:hover {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.idea-card .vote-count {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2ecc71;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Status Label */
+.status {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.status-label {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.status-label.approved {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.status-label.rejected {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.status-label.pending {
+  background-color: #f1c40f;
+  color: white;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons button {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.action-buttons button:hover {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.action-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
